@@ -42,3 +42,20 @@ SET FOREIGN_KEY_CHECKS=0; SET FOREIGN_KEY_CHECKS=1;
  TRUNCATE TABLE flightInfo.test3;
 
  select * from ordcan2019122220200110 where flight1='CX807';
+ delete from ordcan2019122120200110 where arrival_airport='香港国际机场';
+delete from ordhkg2019122120200110 where arrival_airport='白云国际机场';
+
+
+
+   # dest = input("Enter destination airport code (3 char): ")
+   # orig = "ord"
+   # departD = input("Enter depart date format in yyyy-mm-dd: ")
+   # if departD.lower() == 'default':
+   #     departD = "2019-12-21"
+   # elif len(departD) == 2:
+   #     departD = '2019-12-' + departD
+   # returnD = input("Enter return date format in yyyy-mm-dd: ")
+   # if returnD.lower() == 'default':
+   #     returnD = "2020-01-11"
+   # elif len(returnD) == 2:
+   #     returnD = '2020-01-' + returnD
