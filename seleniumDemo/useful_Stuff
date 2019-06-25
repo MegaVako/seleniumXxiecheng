@@ -59,3 +59,12 @@ delete from ordhkg2019122120200110 where arrival_airport='白云国际机场';
    #     returnD = "2020-01-11"
    # elif len(returnD) == 2:
    #     returnD = '2020-01-' + returnD
+
+   from selenium import webdriver
+   from selenium.webdriver.chrome.options import Options
+
+   options = Options()
+   options.binary_location = "/usr/bin/google-chrome"
+   driver = webdriver.Chrome(chrome_options = options, executable_path=r'/usr/bin/chromedriver')
+   driver.get('http://www.baidu.com')
+   print("Chrome Browser Invoked")
